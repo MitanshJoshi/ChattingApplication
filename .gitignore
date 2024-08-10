@@ -1,0 +1,43 @@
+# Ignore node_modules in both frontend and backend
+/frontend/node_modules/
+/backend/node_modules/
+
+/# Logs
+/frontend/logs/
+/backend/logs/
+*.log
+
+# Environment variables
+/frontend/.env
+/backend/.env
+
+# Build directories
+/frontend/build/
+/backend/build/
+
+/# Coverage directory
+/frontend/coverage/
+/backend/coverage/
+
+# npm/yarn lock files
+/frontend/package-lock.json
+/frontend/yarn.lock
+/backend/package-lock.json
+/backend/yarn.lock
+
+# Temporary files
+/frontend/tmp/
+/backend/tmp/
+/frontend/*.tmp
+/backend/*.tmp
+
+# Ignore Windows-specific files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msm
+*.msp
+*.lnk
