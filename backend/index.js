@@ -10,7 +10,7 @@ dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 4000;
 const databaseUrl = process.env.MONGO_URL
-
+  
 app.use(cors({
     origin:[process.env.ORIGIN],
     methods:["GET","POST","PUT","PATCH","DELETE"],
@@ -19,6 +19,8 @@ app.use(cors({
 app.use(cookieParser());
 app.use(express.json());
 app.use("/user",Userroutes)
+app.use('/uploads/profiles', express.static('uploads/profiles'));
+
 
 const server = app.listen(PORT,()=>{
     console.log(`server is listening at port ${PORT}`);
