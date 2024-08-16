@@ -31,7 +31,7 @@ const Profile = () => {
 
 
   const colors = [
-    "bg-[#712c4a57] text-[#ff006e] border-[1px] border-[#ff006faa]",
+    "bg-kk[#712c4a57] text-[#ff006e] border-[1px] border-[#ff006faa]",
     "bg-[#ffd68a2a] text-[#ffd68a] border-[1px] border-[#ffd68abb]",
     "bg-[#06d6a02a] text-[#06d6a0] border-[1px] border-[#06d6a0bb]",
     "bg-[#4cc9f02a] text-[#4cc9f0] border-[1px] border-[#4cc9f0bb]",
@@ -170,6 +170,7 @@ const Profile = () => {
             label="Email"
             placeholder="Email"
             value={userInfo.email}
+            readOnly
             onChange={(e) => setfirstName(e.target.value)}
             className="bg-[#2b2c34] text-white placeholder-gray-400"
           />
